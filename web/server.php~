@@ -55,7 +55,11 @@ try {
 
 
     //header('Content-Type: application/json; charset=utf-8');
-    header("access-control-allow-origin: *");
+    header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
 
     // return response
     die(json_encode(array(
@@ -67,7 +71,11 @@ try {
 } catch (Exception $e) {
 
     //header('Content-Type: application/json; charset=utf-8');
-    header("access-control-allow-origin: *");
+    header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
 
     die(json_encode(array(
         'success'   => false,
