@@ -55,7 +55,7 @@ try {
 
 
     //header('Content-Type: application/json; charset=utf-8');
-    header("Access-Control-Allow-Origin" , "*");
+    header("access-control-allow-origin: *");
 
     // return response
     die(json_encode(array(
@@ -67,7 +67,7 @@ try {
 } catch (Exception $e) {
 
     //header('Content-Type: application/json; charset=utf-8');
-    header("Access-Control-Allow-Origin" , "*");
+    header("access-control-allow-origin: *");
 
     die(json_encode(array(
         'success'   => false,
