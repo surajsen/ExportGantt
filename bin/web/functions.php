@@ -69,13 +69,13 @@ function buildHTMLFiles($folder, $html)
  */
 function renderHTMLFiles($files, $outputFolder, $outputURL, $format, $orientation)
 {
-    $output  = 'https://warm-bayou-1095.herokuapp.com/phantomjs --version';
+    /*$output  = 'https://warm-bayou-1095.herokuapp.com/phantomjs --version';
     // check if launcher (phantomjs or slimerjs) is installed and reachable
     exec(EXPORT_LAUNCHER_VERIFIER, $output);
 
     if (empty($output)) {
         throw new Exception('Launcher cannot be found. PhantomJS (or SlimerJS) not installed or not reachable.');
-    }
+    }*/
 
     $output = array();
     // run PhantomJs (or slimerjs) with parameters : temporary html filenames sent, format of the page and page orientation
