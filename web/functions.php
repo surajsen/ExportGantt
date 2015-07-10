@@ -69,9 +69,9 @@ function buildHTMLFiles($folder, $html)
  */
 function renderHTMLFiles($files, $outputFolder, $outputURL, $format, $orientation)
 {
-    $output  = array();
+    $output  = 'phantomjs --version';
     // check if launcher (phantomjs or slimerjs) is installed and reachable
-    exec(EXPORT_LAUNCHER_VERIFIER,'phantomjs --version');
+    exec(EXPORT_LAUNCHER_VERIFIER, $output);
 
     if (empty($output)) {
         throw new Exception('Launcher cannot be found. PhantomJS (or SlimerJS) not installed or not reachable.');
