@@ -6,7 +6,7 @@
 require_once('functions.php');
 
 // command to run launcher (phantomjs or slimerjs) in console/terminal
-define('EXPORT_LAUNCHER', '/usr/local/share/phantomjs-1.9.7-linux-x86_64');
+define('EXPORT_LAUNCHER', 'phantomjs');
 // command to check accessibility of the launcher in console/terminal
 // must give some not empty output
 define('EXPORT_LAUNCHER_VERIFIER', 'phantomjs --version');
