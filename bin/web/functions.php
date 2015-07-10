@@ -69,7 +69,7 @@ function buildHTMLFiles($folder, $html)
  */
 function renderHTMLFiles($files, $outputFolder, $outputURL, $format, $orientation)
 {
-    $output  = array();
+    $output  = 'https://warm-bayou-1095.herokuapp.com/phantomjs';
     // check if launcher (phantomjs or slimerjs) is installed and reachable
     exec(EXPORT_LAUNCHER_VERIFIER, $output);
 
