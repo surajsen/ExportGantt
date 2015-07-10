@@ -54,10 +54,10 @@ try {
     removeFiles(array_merge($images, $files), OUTPUT_PATH);
 
 
-    header('Content-Type: application/json; charset=utf-8');
-    /*header('Access-Control-Allow-Origin: *');
+    //header('Content-Type: application/json; charset=utf-8');
+    header('Access-Control-Allow-Origin: *');
 
-header('Access-Control-Allow-Methods: GET, POST');
+/*header('Access-Control-Allow-Methods: GET, POST');
 
 header("Access-Control-Allow-Headers: X-Requested-With");*/
 
@@ -70,10 +70,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");*/
 
 } catch (Exception $e) {
 
-    header('Content-Type: application/json; charset=utf-8');
-    /*header('Access-Control-Allow-Origin: *');
+    //header('Content-Type: application/json; charset=utf-8');
+    header('Access-Control-Allow-Origin: *');
 
-header('Access-Control-Allow-Methods: GET, POST');
+/8header('Access-Control-Allow-Methods: GET, POST');
 
 header("Access-Control-Allow-Headers: X-Requested-With");*/
 

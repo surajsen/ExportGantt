@@ -73,7 +73,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");*/
     //header('Content-Type: application/json; charset=utf-8');
     header('Access-Control-Allow-Origin: *');
 
-/8header('Access-Control-Allow-Methods: GET, POST');
+/*header('Access-Control-Allow-Methods: GET, POST');
 
 header("Access-Control-Allow-Headers: X-Requested-With");*/
 
