@@ -9,7 +9,7 @@ require_once('functions.php');
 define('EXPORT_LAUNCHER', '../phantomjs/phantomjs');
 // command to check accessibility of the launcher in console/terminal
 // must give some not empty output
-define('EXPORT_LAUNCHER_VERIFIER', 'phantomjs --version');
+define('EXPORT_LAUNCHER_VERIFIER', '../phantomjs/phantomjs --version');
 // path to ImageMagick bin folder
 //define('IMGK_PATH', '/usr/local/bin/');
 define('IMGK_PATH', '');
