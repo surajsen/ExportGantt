@@ -11,8 +11,8 @@ define('EXPORT_LAUNCHER', '../bin/phantomjs');
 // must give some not empty output
 define('EXPORT_LAUNCHER_VERIFIER', '../bin/phantomjs --version');
 // path to ImageMagick bin folder
-//define('IMGK_PATH', '/usr/local/bin/');
-define('IMGK_PATH', '');
+define('IMGK_PATH', '../bin/');
+//define('IMGK_PATH', '');
 // path where temporary HTML and resulting PNG/PDF files will be created
 //define('OUTPUT_PATH', '/some/folder');
 define('OUTPUT_PATH', dirname(__FILE__));
