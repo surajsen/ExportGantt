@@ -4,7 +4,6 @@
     "monolog/monolog": "~1.7"
   },
   "require-dev": {
-    "heroku/heroku-buildpack-php": "*",
-    "stomita/heroku-buildpack-phantomjs" : "*"
+    "heroku/heroku-buildpack-php": "*"
   }
 }
