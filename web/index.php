@@ -11,7 +11,7 @@ define('EXPORT_LAUNCHER', '../bin/phantomjs');
 // must give some not empty output
 define('EXPORT_LAUNCHER_VERIFIER', '../bin/phantomjs --version');
 // path to ImageMagick bin folder
-define('IMGK_PATH', '/..');
+define('IMGK_PATH', '');
 //define('IMGK_PATH', '');
 // path where temporary HTML and resulting PNG/PDF files will be created
 //define('OUTPUT_PATH', '/some/folder');
@@ -54,7 +54,7 @@ try {
     removeFiles(array_merge($images, $files), OUTPUT_PATH);
 
 
-    //header('Content-Type: application/json; charset=utf-8');
+    header('Content-Type: application/json; charset=utf-8');
     header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
@@ -70,7 +70,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 } catch (Exception $e) {
 
-    //header('Content-Type: application/json; charset=utf-8');
+    header('Content-Type: application/json; charset=utf-8');
     header('Access-Control-Allow-Origin: *');
 
 header('Access-Control-Allow-Methods: GET, POST');
