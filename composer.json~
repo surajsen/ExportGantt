@@ -1,9 +1,21 @@
 {
   "require" : {
     "silex/silex": "~1.1",
-    "monolog/monolog": "~1.7"
+    "monolog/monolog": "~1.7",
+
   },
   "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+    "heroku/heroku-buildpack-php": "*",
+    "jakoch/phantomjs-installer": "2.0.0"
+  },
+
+    
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    }
 }
